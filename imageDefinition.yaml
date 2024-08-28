@@ -1,0 +1,88 @@
+$schema: "1.0"
+name: "java-dev-standard+vs2022pro"
+image: java-dev-standard_visualstudio2022-ent-general-win11-m365-gen2
+tasks:
+  - name: winget
+    description: Install Visual Studio Professional 2022
+    parameters:
+      package: Microsoft.VisualStudio.2022.Professional
+  - name: winget
+    description: Install OpenJDK 21
+    parameters:
+      package: Microsoft.OpenJDK.21
+  - name: winget
+    description: Install IntelliJ IDEA Ultimate
+    parameters:
+      package: JetBrains.IntelliJ.IDEA.Ultimate
+  - name: winget
+    description: Install Git
+    parameters:
+      package: Git.Git
+  - name: winget
+    description: Install GitHub CLI
+    parameters:
+      package: GitHub.cli
+  - name: winget
+    description: Install Azure CLI
+    parameters:
+      package: Microsoft.AzureCLI
+  - name: winget
+    description: Install AWS CLI
+    parameters:
+      package: Amazon.AWSCLI
+  - name: winget
+    description: Install Microsoft OpenJDK 21
+    parameters:
+      package: Microsoft.OpenJDK.21
+  - name: winget
+    description: Install .NET SDK
+    parameters:
+      package: Microsoft.DotNet.SDK.9
+  - name: winget
+    description: Install Azure Functions Core Tools
+    parameters:
+      package: Microsoft.AzureFunctionsCoreTools
+  - name: winget
+    description: Install PowerShell
+    parameters:
+      package: Microsoft.PowerShell
+  - name: winget
+    description: Install SQL Server LocalDB
+    parameters:
+      package: Microsoft.SQLServer.2019.LocalDB
+  - name: winget
+    description: Install Rancher Desktop
+    parameters:
+      package: suse.RancherDesktop
+  - name: winget
+    description: Install jq
+    parameters:
+      package: jqlang.jq
+  - name: winget
+    description: Install Visual Studio Code
+    parameters:
+      package: Microsoft.VisualStudioCode
+  - name: winget
+    description: Install DBeaver Team
+    parameters:
+      package: DBeaver.DBeaver.Team
+  - name: install-vs-extension
+    description: Install C# extension for Visual Studio Code
+    parameters:
+      marketplaceItemName: ms-dotnettools.csharp
+  - name: install-vs-extension
+    description: Install Java Extension Pack for Visual Studio Code 
+    parameters:
+      marketplaceItemName: vscjava.vscode-java-pack
+  - name: install-vs-extension
+    description: Install Azure Tools for Visual Studio Code
+    parameters:
+      marketplaceItemName: ms-azuretools.vscode-azure-account
+  - name: install-vs-extension
+    description: Install Docker extension for Visual Studio Code
+    parameters:
+      marketplaceItemName: ms-azuretools.vscode-docker
+  - name: install-vs-extension
+    description: Install GitHub Codespaces extension for Visual Studio Code
+    parameters:
+      marketplaceItemName: github.codespaces

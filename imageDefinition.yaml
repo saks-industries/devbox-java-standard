@@ -66,6 +66,10 @@ tasks:
     description: Install DBeaver Team
     parameters:
       package: DBeaver.DBeaver.Team
+  - name: winget
+    description: Install Tailscale for secure networking
+    parameters:
+      package: Tailscale.Tailscale
   - name: install-vs-extension
     description: Install C# extension for Visual Studio Code
     parameters:
